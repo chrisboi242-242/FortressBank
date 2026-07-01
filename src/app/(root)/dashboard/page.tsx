@@ -87,7 +87,7 @@ export default function DashboardPage() {
             </div>
             <div>
               <p className="text-white font-mono text-base tracking-[0.2em]">
-                {balanceVisible ? user?.accountNumber : "•••• •••• •••• " + (user?.accountNumber?.slice(-4) || "••••")}
+                {balanceVisible ? user?.accountNumber : "••• ••• ••• " + (user?.accountNumber?.slice(-4) || "••••")}
               </p>
               <p className="text-white/25 text-[10px] mt-1.5 uppercase tracking-widest">
                 Tap to {balanceVisible ? "hide" : "reveal"} details

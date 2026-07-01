@@ -36,6 +36,7 @@ const I = {
   close:   "M18 6 6 18M6 6l12 12",
   logout:  "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9",
   chevron: "m9 18 6-6-6-6",
+  shield:  "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z",
 };
 
 const NAV = [

@@ -22,7 +22,7 @@ export default function TransfersPage() {
     setForm(p => ({ ...p, recipientAccount: value }));
     setRecip(null); setLookErr("");
     const clean = value.replace(/\s/g, "");
-    if (clean.length !== 16) return;
+    if (clean.length !== 13) return;
     if (value === user?.accountNumber) { setLookErr("Cannot transfer to your own account."); return; }
     setLookUp(true);
     try {
@@ -119,7 +119,7 @@ export default function TransfersPage() {
           <div className="space-y-2">
             <label className="text-[11px] font-bold uppercase tracking-[0.1em] text-white/30 pl-1">Recipient Account Number</label>
             <input name="recipientAccount" value={form.recipientAccount} onChange={handleChange} required
-              placeholder="4820 5931 7742 0038" maxLength={19}
+              placeholder="482 732 453 0038" maxLength={15}
               className="w-full h-[52px] px-4 rounded-[10px] bg-white/[0.04] border border-white/[0.08] hover:border-white/20 focus:border-[#00FF85]/50 outline-none text-white font-mono text-base placeholder:text-white/20 transition-all" />
             {lookingUp && (
               <div className="flex items-center gap-2 text-white/30 text-xs">
